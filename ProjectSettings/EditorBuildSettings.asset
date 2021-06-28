@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/01.Scenes/START.unity
     guid: 015b0a112dab8eb4c823fcc1651eb8be
   - enabled: 1
+    path: Assets/01.Scenes/ROADING.unity
+    guid: 597680297837d8c4f8031348d61ef45a
+  - enabled: 1
     path: Assets/01.Scenes/GAME.unity
     guid: 2b2c9161426dfe349ba820a657652336
   m_configObjects: {}

@@ -23,7 +23,7 @@ public class StartCtrl : MonoBehaviour
     }
     public void ToGoGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("ROADING");
     }
 
 }
