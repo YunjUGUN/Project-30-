@@ -25,11 +25,19 @@ public class PlayerCtrl : MonoBehaviour
         {
             transform.position += Vector3.forward * speed * Time.deltaTime;
             Wkey.SetActive(true);
-        }       
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            Wkey.SetActive(false);
+        }
         if (Input.GetKey(KeyCode.S))
         {
             transform.position += Vector3.back * speed * Time.deltaTime;
             Skey.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            Skey.SetActive(false);
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -37,10 +45,18 @@ public class PlayerCtrl : MonoBehaviour
             Akey.SetActive(true);
             //Akey.enabled = true;
         }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            Akey.SetActive(false);
+        }
         if (Input.GetKey(KeyCode.D))
         {
             transform.position += Vector3.right * speed * Time.deltaTime;
             Dkey.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            Dkey.SetActive(false);
         }
     }
 }
