@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TransFormCtrl : MonoBehaviour
+public class BasicCtrl : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,14 +17,13 @@ public class TransFormCtrl : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag== "PLAYER")
+        if (collision.transform.tag == "PLAYER")
         {
-            GoToTran();
-            Debug.Log("´ê¾Ò´Ù");
+            GoToBasic();
         }
     }
-    public void GoToTran()
+    public void GoToBasic()
     {
-        SceneManager.LoadScene("TRANSFORM");
+        SceneManager.LoadScene("BASIC");
     }
 }
